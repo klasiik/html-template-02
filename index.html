@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<title>Grono.net</title>
+		<link rel="stylesheet" href="style.css">
+		<body>
+			<div id="container">
+				<header>
+					<div id="heading">
+						<img src="gfx/winogrono.jpg" id="grape">
+						<img src="gfx/logo.jpg" id="logo">
+						<p id="language">Język</p>
+						<img src="gfx/pl.jpg">
+						<img src="gfx/en.jpg">
+						<img src="gfx/es.jpg">
+						<img src="gfx/fr.jpg">
+						<img src="gfx/de.jpg">
+						<img src="gfx/it.jpg">
+					</div>
+					<nav>
+						<table id="menu">
+							<tr>
+								<td>Strona główna</td>
+								<td>Fotki i filmy</td>
+								<td>Grona i fora</td>
+								<td>Wiadomości</td>
+								<td>Wydarzenia</td>
+								<td>Grono dodatki</td>
+							</tr>
+							<tr id="menu-2nd-row">
+								<td>Szukaj</td>
+								<td><img src="gfx/blimp.png"></td>
+								<td>Znajomi</td>
+								<td>Profil</td>
+								<td>Ogłoszenia</td>
+								<td>Strefa</td>
+							</tr>
+						</table>
+					</nav>
+				</header>
+				<div id="content">
+					<div id="search">
+						<h1>Szukaj znajomych i nieznajomych</h1>
+						<div id="search-box">
+							<div id="search-label">
+								<label for="search">Imię, nazwisko, nick, e-mail:</label>
+							</div>
+							<input type="text" id="search-text" name="search">
+							<input type="submit" value="Szukaj" id="search-button">
+							<div id="line">.</div>
+							<div class="cb-gender">
+								<input type="checkbox" value="Kobiety" name="kobiety" id="cb-female">
+							</div>
+							<div class="gender-choice">
+								<label for="cb-female">Kobiety</label>
+							</div>
+							<div class="cb-gender">
+								<input type="checkbox" value="Mężczyźni" name="mężczyźni" id="cb-male">
+							</div>
+							<div class="gender-choice">
+								<label for="cb-male">Mężczyżni</label>
+							</div>
+							<select name="age" id="select-age">
+								<option value="Wiek...">Wiek...</option>
+								<option value="Wiek...">Wiek...</option>
+								<option value="Wiek...">Wiek...</option>
+							</select>
+							<select name="city" id="select-city">
+								<option value="Miasto...">Miasto...</option>
+								<option value="Miasto...">Miasto...</option>
+								<option value="Miasto...">Miasto...</option>
+							</select>
+						</div>
+					</div>
+					<div id="new-photos">
+						<h2>Najnowsze galerie</h2>
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<p>Więcej galerii</p>
+						<img src="gfx/arrow.jpg">
+					</div>
+					<div id="new-people">
+						<h2>Nowi ludzie w gronie</h2>
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+						<img src="gfx/user.jpg" alt="user" class="user-img">
+					</div>
+				</div>
+				<div id="right-bar">
+					<h3>Logowanie</h3>
+					<div id="login-box">
+						<form name="login">
+							<table>
+								<tr>
+									<td class="align-right">
+										<label for="log-mail">Login, e-mail:</label>
+									</td>
+									<td>
+										<input type="text" name"log-mail" id="log-mail">
+									</td>
+								</tr>
+								<tr>
+									<td class="align-right">
+										<label for="password">Hasło:</label>
+									</td>
+									<td>
+										<input type="text" name="password" id="password">
+									</td>
+								</td>
+								<tr>
+									<td></td>
+									<td>
+										<p id="forgot-pass">Zapomniałem hasła</p>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<input type="checkbox" name="auto-login" id="auto-login">
+										<label for="auto-login" id="auto-login-label">Automatyczne logowanie</label>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="login-button-td">
+										<input type="button" value="OK" id="login-button">
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+					<h3>Znajdź w znajomych i przyłącz się.</h3>
+					<p id="w-gronie-mozesz">W Gronie możesz:</p>
+					<ul>
+						<li>odszukać znajomych,</li>
+						<li>odbudować stare znajomości,</li>
+						<li>poznać ciekawych ludzi,</li>
+						<li>prowadzić zażarte dyskusje,</li>
+						<li>wgrać tony zdjęć,</li>
+						<li>zmienić język Grona</li>
+					</ul>
+					<p class="left-bar-p">Zaznacz się na mapie i zobacz gdzie są inni Gronowicze!</p>
+					<p class="left-bar-p">Poproś znajomych o zaproszenie</p>
+					<p class="left-bar-p blue">Dowiedz się więcej o gronie</p>
+					<p class="left-bar-p blue" id="zgubione">Zgubione zaproszenie</p>
+					<h3>Grona tematyczne</h3>
+					<ul id="grona-list">
+						<li>Zwierzęta Dzikie i Domowe</li>
+						<li>Sztuka</li>
+						<li>Książka i Film</li>
+						<li>Używki, Alkohole, Wino</li>
+					</ul>
+				</div>
+			</div>
+		</body>	
+	</head>
