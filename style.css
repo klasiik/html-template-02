@@ -215,8 +215,8 @@ header {
 }
 
 .user-img-div-new {
-	height: 100px !important;
-	width: 100px !important;
+	height: 100px;
+	width: 100px;
 	margin-left: 0px !important;
 	margin-right: 0px !important;
 }
@@ -677,8 +677,8 @@ ul {
 		margin-right: auto;
 	}
 	#new-people div {
-		width: 77px;
-		height: 77px;
+		width: 100px;
+		height: 100px;
 	}
 
 	#login-box {
@@ -927,10 +927,17 @@ ul {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	#new-people div {
-		width: 77px;
-		height: 77px;
+		width: 100px;
+		height: 100px;
 	}
+
+	.user-img-div-new {
+		height: 100px;
+		width: 100px;
+	}
+
 	h3 {
 		font-size: 16px;
 		margin-left: 10px;
