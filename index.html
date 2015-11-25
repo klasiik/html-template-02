@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Grono.net</title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="gfx/favicon.ico">
 		<body>
 			<div id="container">
 				<header>
@@ -11,12 +12,14 @@
 						<img src="gfx/winogrono.jpg" id="grape">
 						<img src="gfx/logo.jpg" id="logo">
 						<p id="language">Język</p>
-						<img src="gfx/pl.jpg" class="language-flag">
-						<img src="gfx/en.jpg" class="language-flag">
-						<img src="gfx/es.jpg" class="language-flag">
-						<img src="gfx/fr.jpg" class="language-flag">
-						<img src="gfx/de.jpg" class="language-flag">
-						<img src="gfx/it.jpg" class="language-flag">
+						<div id="language-flag-div">
+							<img src="gfx/pl.jpg" class="language-flag">
+							<img src="gfx/en.jpg" class="language-flag">
+							<img src="gfx/es.jpg" class="language-flag">
+							<img src="gfx/fr.jpg" class="language-flag">
+							<img src="gfx/de.jpg" class="language-flag">
+							<img src="gfx/it.jpg" class="language-flag">
+						</div>
 					</div>
 					<nav>
 						<div id="menu">
@@ -83,67 +86,131 @@
 					</div>
 					<div id="new-photos">
 						<h2>Najnowsze galerie</h2>
-						<img src="http://lorempixel.com/77/77/?1" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?2" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?3" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?4" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?5" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?6" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?7" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?8" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?9" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?10" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?11" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?12" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?13" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?14" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?15" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?16" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?17" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?18" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?19" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?20" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?21" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?22" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?23" alt="user" class="user-img">
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?1" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?2" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?3" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?4" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?5" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?6" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?7" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?8" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?9" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?10" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?11" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?12" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?13" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?14" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?15" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?16" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?17" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?18" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?19" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?20" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?21" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?22" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
+							<img src="http://lorempixel.com/77/77/?23" alt="user" class="user-img">
+						</div>
+						<div class="user-img-div">
 						<img src="http://lorempixel.com/77/77/?24" alt="user" class="user-img">
+						</div>
 						<p class="cur-point">Więcej galerii</p>
 						<img src="gfx/arrow.jpg" class="cur-point">
 					</div>
 					<div id="new-people">
 						<h2>Nowi ludzie w gronie</h2>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?1" alt="user">
+						<div class="user-div">
+							<div class="user-img-div user-img-div-new">
+								<img src="http://lorempixel.com/100/100/?1" alt="user" class="user-img">
+							</div>
 						<p>Ania</p>
 						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?2" alt="user">
+						<div class="user-div">
+							<div class="user-img-div user-img-div-new">
+								<img src="http://lorempixel.com/100/100/?2" alt="user" class="user-img">
+							</div>
 						<p>Marcin</p>
 						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?3" alt="user">
+						<div class="user-div">
+							<div class="user-img-div user-img-div-new">
+								<img src="http://lorempixel.com/100/100/?3" alt="user" class="user-img">
+							</div>
 						<p>Jakub</p>
 						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?4" alt="user">
+						<div class="user-div">
+							<div class="user-img-div user-img-div-new">
+								<img src="http://lorempixel.com/100/100/?4" alt="user" class="user-img">
+							</div>
 						<p>Paulina</p>
 						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?5" alt="user">
+						<div class="user-div">
+							<div class="user-img-div user-img-div-new">
+								<img src="http://lorempixel.com/100/100/?5" alt="user" class="user-img">
+							</div>
 						<p>Justyna</p>
 						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?6" alt="user">
+						<div class="user-div">
+							<div class="user-img-div user-img-div-new">
+								<img src="http://lorempixel.com/100/100/?6" alt="user" class="user-img">
+							</div>
 						<p>Oleg</p>
 						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?7" alt="user">
+						<div class="user-div">
+							<div class="user-img-div user-img-div-new">
+								<img src="http://lorempixel.com/100/100/?7" alt="user" class="user-img">
+							</div>
 						<p>Sasza</p>
 						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?8" alt="user">
+						<div class="user-div">
+							<div class="user-img-div user-img-div-new">
+								<img src="http://lorempixel.com/100/100/?8" alt="user" class="user-img">
+							</div>
 						<p>Dominika</p>
-						</div>					
+						</div>
 					</div>
 				</div>
 				<div id="right-bar">
@@ -175,7 +242,7 @@
 								</tr>
 								<tr>
 									<td></td>
-									<td>
+									<td id="auto-login-td">
 										<input type="checkbox" name="auto-login" id="auto-login">
 										<label for="auto-login" id="auto-login-label">Automatyczne logowanie</label>
 									</td>
@@ -212,5 +279,5 @@
 					</ul>
 				</div>
 			</div>
-		</body>	
+		</body>
 	</head>
