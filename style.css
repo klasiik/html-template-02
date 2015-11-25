@@ -207,6 +207,7 @@ header {
 	margin-left: 10px;
 }
 
+
 .user-img-div {
 	width: 100px;
 	height: 100px;
@@ -217,8 +218,8 @@ header {
 .user-img-div-new {
 	height: 100px;
 	width: 100px;
-	margin-left: 0px !important;
-	margin-right: 0px !important;
+	margin-left: 5px;
+	margin-right: auto;
 }
 
 .user-img {
@@ -438,7 +439,7 @@ ul {
 	}
 
 	.user-img-div {
-		margin-left: auto;
+		margin-left: 5px;
 		margin-right: auto;
 	}
 }
@@ -655,7 +656,7 @@ ul {
 	}
 
 	.user-img-div {
-		margin-left: auto;
+		margin-left: 5px;
 		margin-right: auto;
 	}
 
@@ -901,7 +902,7 @@ ul {
 	}
 
 	.user-img-div {
-		margin-left: auto;
+		margin-left: 5px;
 		margin-right: auto;
 	}
 
