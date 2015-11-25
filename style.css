@@ -213,6 +213,8 @@ header {
 	height: 100px;
 	display: inline-block;
 	overflow: hidden;
+	margin-left: 5px;
+	margin-right: auto;
 }
 
 .user-img-div-new {
