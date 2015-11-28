@@ -4,156 +4,107 @@
 		<meta charset="utf-8">
 		<title>Grono.net</title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="gfx/favicon.ico">
+		<script type="text/javascript" src="script.js" async></script>
+	</head>
 		<body>
 			<div id="container">
 				<header>
 					<div id="heading">
 						<img src="gfx/winogrono.jpg" id="grape">
 						<img src="gfx/logo.jpg" id="logo">
-						<p id="language">Język</p>
-						<img src="gfx/pl.jpg" class="language-flag">
-						<img src="gfx/en.jpg" class="language-flag">
-						<img src="gfx/es.jpg" class="language-flag">
-						<img src="gfx/fr.jpg" class="language-flag">
-						<img src="gfx/de.jpg" class="language-flag">
-						<img src="gfx/it.jpg" class="language-flag">
+						<p id="language" data-language="language">Język</p>
+						<div id="language-flag-div">
+							<img src="gfx/pl.jpg" class="language-flag" id="lang-pl">
+							<img src="gfx/en.jpg" class="language-flag" id="lang-en">
+							<img src="gfx/es.jpg" class="language-flag" id="lang-es">
+							<img src="gfx/fr.jpg" class="language-flag" id="lang-fr">
+							<img src="gfx/de.jpg" class="language-flag" id="lang-de">
+							<img src="gfx/it.jpg" class="language-flag" id="lang-it">
+						</div>
 					</div>
 					<nav>
 						<div id="menu">
 								<div class="menu-column">
-									<div>Strona główna</div>
-									<div>Szukaj</div>
+									<div data-language="menuHome">Strona główna</div>
+									<div data-language="menuSearch">Szukaj</div>
 								</div>
 								<div class="menu-column">
-									<div>Fotki i filmy</div>
+									<div data-language="menuPhotos">Fotki i filmy</div>
 									<div><img src="gfx/blimp.png"></div>
 								</div>
 								<div class="menu-column">
-									<div>Grona i fora</div>
-									<div>Znajomi</div>
+									<div data-language="menuForums">Grona i fora</div>
+									<div data-language="menuFriends">Znajomi</div>
 								</div>
 								<div class="menu-column">
-									<div>Wiadomości</div>
-									<div>Profil</div>
+									<div data-language="menuMessages">Wiadomości</div>
+									<div data-language="menuProfile">Profil</div>
 								</div>
 								<div class="menu-column">
-									<div>Wydarzenia</div>
-									<div>Ogłoszenia</div>
+									<div data-language="menuEvents">Wydarzenia</div>
+									<div data-language="menuAnnouncements">Ogłoszenia</div>
 								</div>
 								<div class="menu-column">
-									<div>Grono dodatki</div>
-									<div id="strefa">Strefa</div>
+									<div data-language="menuAdditions">Grono dodatki</div>
+									<div id="strefa" data-language="menuZone">Strefa</div>
 								</div>
 						</div>
 					</nav>
 				</header>
 				<div id="content">
 					<div id="search">
-						<h1>Szukaj znajomych i nieznajomych</h1>
+						<h1 data-language="hSearch">Szukaj znajomych i nieznajomych</h1>
 						<div id="search-box">
 							<div id="search-label">
-								<label for="search">Imię, nazwisko, nick, e-mail:</label>
+								<label for="search" data-language="searchName">Imię, nazwisko, nick, e-mail:</label>
 							</div>
 							<input type="text" id="search-text" name="search">
-							<input type="submit" value="Szukaj" id="search-button">
+							<input type="submit" value="Szukaj" id="search-button" data-language="searchButton">
 							<div id="line">.</div>
 							<div class="cb-gender">
 								<input type="checkbox" value="Kobiety" name="kobiety" id="cb-female">
 							</div>
 							<div class="gender-choice">
-								<label for="cb-female">Kobiety</label>
+								<label for="cb-female" data-language="searchFemale">Kobiety</label>
 							</div>
 							<div class="cb-gender">
 								<input type="checkbox" value="Mężczyźni" name="mężczyźni" id="cb-male">
 							</div>
 							<div class="gender-choice">
-								<label for="cb-male">Mężczyżni</label>
+								<label for="cb-male" data-language="searchMale">Mężczyżni</label>
 							</div>
 							<select name="age" id="select-age">
-								<option value="Wiek...">Wiek...</option>
-								<option value="Wiek...">Wiek...</option>
-								<option value="Wiek...">Wiek...</option>
+								<option value="Wiek..." data-language="searchAge">Wiek...</option>
+								<option value="Wiek..." data-language="searchAge">Wiek...</option>
+								<option value="Wiek..." data-language="searchAge">Wiek...</option>
 							</select>
 							<select name="city" id="select-city">
-								<option value="Miasto...">Miasto...</option>
-								<option value="Miasto...">Miasto...</option>
-								<option value="Miasto...">Miasto...</option>
+								<option value="Miasto..." data-language="searchCity">Miasto...</option>
+								<option value="Miasto..." data-language="searchCity">Miasto...</option>
+								<option value="Miasto..." data-language="searchCity">Miasto...</option>
 							</select>
 						</div>
 					</div>
 					<div id="new-photos">
-						<h2>Najnowsze galerie</h2>
-						<img src="http://lorempixel.com/77/77/?1" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?2" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?3" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?4" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?5" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?6" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?7" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?8" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?9" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?10" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?11" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?12" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?13" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?14" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?15" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?16" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?17" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?18" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?19" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?20" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?21" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?22" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?23" alt="user" class="user-img">
-						<img src="http://lorempixel.com/77/77/?24" alt="user" class="user-img">
-						<p class="cur-point">Więcej galerii</p>
+						<h2 data-language="hNewPhotos">Najnowsze galerie</h2>
+						<div id="new-photos-2"></div>
+						<p class="cur-point" data-language="morePhotos">Więcej galerii</p>
 						<img src="gfx/arrow.jpg" class="cur-point">
 					</div>
 					<div id="new-people">
-						<h2>Nowi ludzie w gronie</h2>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?1" alt="user">
-						<p>Ania</p>
-						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?2" alt="user">
-						<p>Marcin</p>
-						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?3" alt="user">
-						<p>Jakub</p>
-						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?4" alt="user">
-						<p>Paulina</p>
-						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?5" alt="user">
-						<p>Justyna</p>
-						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?6" alt="user">
-						<p>Oleg</p>
-						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?7" alt="user">
-						<p>Sasza</p>
-						</div>
-						<div class="user-img">
-						<img src="http://lorempixel.com/77/77/?8" alt="user">
-						<p>Dominika</p>
-						</div>					
+						<h2 data-language="hNewPeople">Nowi ludzie w gronie</h2>
+						
 					</div>
 				</div>
 				<div id="right-bar">
-					<h3>Logowanie</h3>
+					<h3 data-language="hLogin">Logowanie</h3>
 					<div id="login-box">
 						<form name="login">
 							<table>
 								<tr>
 									<td class="align-right">
-										<label for="log-mail">Login, e-mail:</label>
+										<label for="log-mail" data-language="login">Login, e-mail:</label>
 									</td>
 									<td>
 										<input type="text" name"log-mail" id="log-mail">
@@ -161,7 +112,7 @@
 								</tr>
 								<tr>
 									<td class="align-right">
-										<label for="password">Hasło:</label>
+										<label for="password" data-language="passwordd">Hasło:</label>
 									</td>
 									<td>
 										<input type="text" name="password" id="password">
@@ -170,14 +121,14 @@
 								<tr>
 									<td></td>
 									<td>
-										<p id="forgot-pass">Zapomniałem hasła</p>
+										<p id="forgot-pass" data-language="forgotPass">Zapomniałem hasła</p>
 									</td>
 								</tr>
 								<tr>
 									<td></td>
-									<td>
+									<td id="auto-login-td">
 										<input type="checkbox" name="auto-login" id="auto-login">
-										<label for="auto-login" id="auto-login-label">Automatyczne logowanie</label>
+										<label for="auto-login" id="auto-login-label" data-language="autoLogin">Automatyczne logowanie</label>
 									</td>
 								</tr>
 								<tr>
@@ -189,28 +140,28 @@
 							</table>
 						</form>
 					</div>
-					<h3>Znajdź w znajomych i przyłącz się.</h3>
-					<p id="w-gronie-mozesz">W Gronie możesz:</p>
+					<h3 data-language="hFindAndJoin">Znajdź w znajomych i przyłącz się.</h3>
+					<p id="w-gronie-mozesz" data-language="gronoCan">W Gronie możesz:</p>
 					<ul>
-						<li>odszukać znajomych,</li>
-						<li>odbudować stare znajomości,</li>
-						<li>poznać ciekawych ludzi,</li>
-						<li>prowadzić zażarte dyskusje,</li>
-						<li>wgrać tony zdjęć,</li>
-						<li>zmienić język Grona</li>
+						<li data-language="listElement1">odszukać znajomych,</li>
+						<li data-language="listElement2">odbudować stare znajomości,</li>
+						<li data-language="listElement3">poznać ciekawych ludzi,</li>
+						<li data-language="listElement4">prowadzić zażarte dyskusje,</li>
+						<li data-language="listElement5">wgrać tony zdjęć,</li>
+						<li data-language="listElement6">zmienić język Grona</li>
 					</ul>
-					<p class="left-bar-p">Zaznacz się na mapie i zobacz gdzie są inni Gronowicze!</p>
-					<p class="left-bar-p">Poproś znajomych o zaproszenie</p>
-					<p class="left-bar-p blue">Dowiedz się więcej o gronie</p>
-					<p class="left-bar-p blue" id="zgubione">Zgubione zaproszenie</p>
-					<h3>Grona tematyczne</h3>
+					<p class="left-bar-p" data-language="map">Zaznacz się na mapie i zobacz gdzie są inni Gronowicze!</p>
+					<p class="left-bar-p" data-language="friendRequest">Poproś znajomych o zaproszenie</p>
+					<p class="left-bar-p blue" data-language="learnMore">Dowiedz się więcej o gronie</p>
+					<p class="left-bar-p blue" id="zgubione" data-language="lostInvite">Zgubione zaproszenie</p>
+					<h3 data-language="hThreads">Grona tematyczne</h3>
 					<ul id="grona-list">
-						<li>Zwierzęta Dzikie i Domowe</li>
-						<li>Sztuka</li>
-						<li>Książka i Film</li>
-						<li>Używki, Alkohole, Wino</li>
+						<li data-language="threadListEl1">Zwierzęta Dzikie i Domowe</li>
+						<li data-language="threadListEl2">Sztuka</li>
+						<li data-language="threadListEl3">Książka i Film</li>
+						<li data-language="threadListEl4">Używki, Alkohole, Wino</li>
 					</ul>
 				</div>
 			</div>
-		</body>	
-	</head>
+		</body>
+</html>
