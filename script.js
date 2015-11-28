@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 //dynamically generated images
 
-=======
->>>>>>> 45950dad2419a863fe6bd76278e12e2fa0fa8282
 var newPhotos = document.getElementById("new-photos-2");
 
 for (i=0; i<25; i++) {
@@ -48,7 +45,6 @@ for (i=0; i<8; i++) {
 	var userImgP = document.createElement("p");
 	userDiv.appendChild(userImgP);
 	userImgP.innerHTML = newUsers[i];
-<<<<<<< HEAD
 };
 
 //LANGUAGE CHANGE
@@ -495,6 +491,3 @@ for (var j=0; j<langIds.length; j++) {
 	};
 };
 */
-=======
-};
->>>>>>> 45950dad2419a863fe6bd76278e12e2fa0fa8282
