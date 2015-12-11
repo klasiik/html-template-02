@@ -344,6 +344,19 @@ var langFlagFr = document.getElementById("lang-fr");
 var langFlagDe = document.getElementById("lang-de");
 var langFlagIt = document.getElementById("lang-it");
 
+var testAlert = function(p) {
+	var x = p.target.getAttribute("data-language-id");
+	for (var i = 0; i < langDivs.length; i++) {
+		var langDiv = langDivs[i];
+		var langData = langDivs[i].getAttribute("data-language");
+		langDiv.textContent = x[langData];
+		searchButtonLg.value = x["searchButton"];
+	};
+};
+
+langFlags.forEach = addEventListener('click', testAlert);
+
+/*
 langFlagPl.onclick = function() {
 		for (var i = 0; i < langDivs.length; i++) {
 			var langDiv = langDivs[i];
@@ -397,3 +410,4 @@ langFlagIt.onclick = function() {
 			searchButtonLg.value = italian["searchButton"];
 		};
 };
+*/
